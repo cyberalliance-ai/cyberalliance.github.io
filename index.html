@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Cyber Alliance | AI, Blockchain & Cybersecurity Consulting</title>
+
+<meta name="description" content="Cyber Alliance provides AI, Blockchain and Cybersecurity solutions. We help companies secure, automate and scale with advanced technology.">
+<meta name="keywords" content="Cybersecurity, Artificial Intelligence, Blockchain, AI Consulting, SOC, Cloud Security, MLOps, Data Engineering">
+<meta name="author" content="Cyber Alliance">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Cyber Alliance - AI, Blockchain & Cybersecurity">
+<meta property="og:description" content="Secure and scale your business with AI, Blockchain and Cybersecurity consulting.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cyberalliance.ai">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cyber Alliance">
+<meta name="twitter:description" content="AI, Blockchain and Cybersecurity Solutions">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {font-family: Arial, sans-serif; margin:0; background:#f4f6fb; color:#111;}
+header {background:linear-gradient(135deg,#0d1b2a,#1b3a5f); color:white; padding:70px 10%;}
+h1 {font-size:48px; margin:0;}
+p {font-size:18px;}
+.btn {background:#007bff; color:white; padding:14px 28px; text-decoration:none; border-radius:8px; font-weight:bold; display:inline-block;}
+section {padding:60px 10%;}
+.grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px;}
+.card {background:white; border-radius:10px; padding:25px; box-shadow:0 5px 15px rgba(0,0,0,.08);}
+form input, form textarea {width:100%; padding:12px; margin:10px 0; border-radius:6px; border:1px solid #ccc;}
+form button {background:#007bff; color:white; padding:14px; border:none; border-radius:8px; width:100%; font-size:16px;}
+footer {text-align:center; padding:30px; background:#0d1b2a; color:white;}
+.whatsapp {
+ position:fixed; bottom:20px; right:20px;
+ background:#25d366; color:white;
+ padding:14px 18px; border-radius:50px;
+ text-decoration:none; font-weight:bold;
+ box-shadow:0 5px 10px rgba(0,0,0,.3);
+}
+.lang {
+ position:absolute; top:20px; right:10%;
+ color:white;
+}
+.lang button {
+ background:none; border:1px solid white; color:white;
+ padding:6px 12px; margin-left:5px; border-radius:6px;
+ cursor:pointer;
+}
+</style>
+
+<script>
+function setLang(lang){
+ document.querySelectorAll("[data-lang]").forEach(el=>{
+   el.style.display = el.dataset.lang === lang ? "block":"none";
+ });
+}
+</script>
+
+</head>
+
+<body onload="setLang('en')">
+
+<header>
+  <div class="lang">
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('pt')">PT</button>
+  </div>
+
+  <h1>Cyber Alliance</h1>
+
+  <div data-lang="en">
+    <p>Customized AI, Blockchain & Cybersecurity Solutions</p>
+    <p>We empower companies to innovate, secure, and scale using Artificial Intelligence, Blockchain and Advanced Cybersecurity.</p>
+    <a class="btn" href="#contact">Request a Quote</a>
+  </div>
+
+  <div data-lang="pt">
+    <p>Soluções Personalizadas em IA, Blockchain e Cibersegurança</p>
+    <p>Apoiamos empresas a inovar, proteger e escalar usando Inteligência Artificial, Blockchain e Cibersegurança avançada.</p>
+    <a class="btn" href="#contact">Solicitar Proposta</a>
+  </div>
+</header>
+
+<section>
+  <h2 data-lang="en">Our Services</h2>
+  <h2 data-lang="pt">Nossos Serviços</h2>
+
+  <div class="grid">
+    <div class="card" data-lang="en">🔐 Cybersecurity Consulting & SOC Architecture</div>
+    <div class="card" data-lang="pt">🔐 Consultoria em Cibersegurança & Arquitetura SOC</div>
+
+    <div class="card" data-lang="en">🤖 Artificial Intelligence & Data Engineering</div>
+    <div class="card" data-lang="pt">🤖 Inteligência Artificial & Engenharia de Dados</div>
+
+    <div class="card" data-lang="en">⛓ Blockchain & Smart Contracts</div>
+    <div class="card" data-lang="pt">⛓ Blockchain & Smart Contracts</div>
+
+    <div class="card" data-lang="en">☁ Cloud Security & MLOps</div>
+    <div class="card" data-lang="pt">☁ Segurança em Cloud & MLOps</div>
+  </div>
+</section>
+
+<section>
+  <h2 data-lang="en">Industry Use Cases</h2>
+  <h2 data-lang="pt">Casos de Uso por Indústria</h2>
+
+  <div class="grid">
+    <div class="card" data-lang="en"><strong>Finance</strong><br>Fraud detection, AI risk engines.</div>
+    <div class="card" data-lang="pt"><strong>Financeiro</strong><br>Detecção de fraude e motores de risco em IA.</div>
+
+    <div class="card" data-lang="en"><strong>Healthcare</strong><br>Secure AI platforms and data protection.</div>
+    <div class="card" data-lang="pt"><strong>Saúde</strong><br>Plataformas seguras e proteção de dados.</div>
+
+    <div class="card" data-lang="en"><strong>E-commerce</strong><br>Threat prevention and AI automation.</div>
+    <div class="card" data-lang="pt"><strong>E-commerce</strong><br>Prevenção de ameaças e automação com IA.</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 data-lang="en">Contact Cyber Alliance</h2>
+  <h2 data-lang="pt">Contato Cyber Alliance</h2>
+
+  <form action="https://formsubmit.co/contato@cyberalliance.ai" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="name" placeholder="Name / Nome" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" rows="5" placeholder="Message / Mensagem" required></textarea>
+    <button type="submit" data-lang="en">Send Message</button>
+    <button type="submit" data-lang="pt">Enviar Mensagem</button>
+  </form>
+</section>
+
+<footer>
+  Cyber Alliance © 2026 • AI • Blockchain • Cybersecurity
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5521991765023?text=Hello!%20I'm%20interested%20in%20emerging%20technologies%20solutions.%20Can%20we%20discuss%20it%20further%3F" target="_blank">💬 WhatsApp</a>
+
+</body>
+</html>
