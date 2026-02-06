@@ -2,134 +2,162 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-
 <title>Cyber Alliance | AI, Blockchain & Cybersecurity Consulting</title>
 
-<meta name="description" content="Cyber Alliance provides AI, Blockchain and Cybersecurity solutions. We help companies secure, automate and scale with advanced technology.">
-<meta name="keywords" content="Cybersecurity, Artificial Intelligence, Blockchain, AI Consulting, SOC, Cloud Security, MLOps, Data Engineering">
+<meta name="description" content="Cyber Alliance provides AI, Blockchain and Cybersecurity solutions to secure, automate and scale businesses worldwide.">
+<meta name="keywords" content="Cybersecurity Consulting, Artificial Intelligence, Blockchain, AI Security, SOC, Smart Contracts">
 <meta name="author" content="Cyber Alliance">
 <meta name="robots" content="index, follow">
-
-<meta property="og:title" content="Cyber Alliance - AI, Blockchain & Cybersecurity">
-<meta property="og:description" content="Secure and scale your business with AI, Blockchain and Cybersecurity consulting.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://cyberalliance.ai">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cyber Alliance">
-<meta name="twitter:description" content="AI, Blockchain and Cybersecurity Solutions">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body {font-family: Arial, sans-serif; margin:0; background:#f4f6fb; color:#111;}
-header {background:linear-gradient(135deg,#0d1b2a,#1b3a5f); color:white; padding:70px 10%;}
-h1 {font-size:48px; margin:0;}
+body {margin:0;font-family:Arial,sans-serif;background:#f4f6fb;color:#111;}
+header {
+ background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('assets/ai.jpg') center/cover;
+ color:white;padding:80px 10%;
+}
+nav {display:flex;align-items:center;justify-content:space-between;}
+nav img {height:55px;}
+h1 {font-size:48px;margin:20px 0;}
 p {font-size:18px;}
-.btn {background:#007bff; color:white; padding:14px 28px; text-decoration:none; border-radius:8px; font-weight:bold; display:inline-block;}
-section {padding:60px 10%;}
-.grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px;}
-.card {background:white; border-radius:10px; padding:25px; box-shadow:0 5px 15px rgba(0,0,0,.08);}
-form input, form textarea {width:100%; padding:12px; margin:10px 0; border-radius:6px; border:1px solid #ccc;}
-form button {background:#007bff; color:white; padding:14px; border:none; border-radius:8px; width:100%; font-size:16px;}
-footer {text-align:center; padding:30px; background:#0d1b2a; color:white;}
+.btn {background:#2563eb;color:white;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:bold;}
+section {padding:70px 10%;}
+.grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px;}
+.card {
+ background:white;border-radius:12px;overflow:hidden;
+ box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+.card img {width:100%;height:160px;object-fit:cover;}
+.card div {padding:20px;}
+footer {background:#0d1b2a;color:white;text-align:center;padding:30px;}
 .whatsapp {
- position:fixed; bottom:20px; right:20px;
- background:#25d366; color:white;
- padding:14px 18px; border-radius:50px;
- text-decoration:none; font-weight:bold;
- box-shadow:0 5px 10px rgba(0,0,0,.3);
-}
-.lang {
- position:absolute; top:20px; right:10%;
- color:white;
-}
-.lang button {
- background:none; border:1px solid white; color:white;
- padding:6px 12px; margin-left:5px; border-radius:6px;
- cursor:pointer;
+ position:fixed;bottom:20px;right:20px;background:#25d366;color:white;
+ padding:14px 18px;border-radius:40px;text-decoration:none;font-weight:bold;
 }
 </style>
-
-<script>
-function setLang(lang){
- document.querySelectorAll("[data-lang]").forEach(el=>{
-   el.style.display = el.dataset.lang === lang ? "block":"none";
- });
-}
-</script>
-
 </head>
 
-<body onload="setLang('en')">
+<body>
 
 <header>
-  <div class="lang">
-    <button onclick="setLang('en')">EN</button>
-    <button onclick="setLang('pt')">PT</button>
-  </div>
+  <nav>
+    <img src="cyberalliance.png" alt="Cyber Alliance Logo">
+    <a class="btn" href="#contact">Contact</a>
+  </nav>
 
   <h1>Cyber Alliance</h1>
-
-  <div data-lang="en">
-    <p>Customized AI, Blockchain & Cybersecurity Solutions</p>
-    <p>We empower companies to innovate, secure, and scale using Artificial Intelligence, Blockchain and Advanced Cybersecurity.</p>
-    <a class="btn" href="#contact">Request a Quote</a>
-  </div>
-
-  <div data-lang="pt">
-    <p>Soluções Personalizadas em IA, Blockchain e Cibersegurança</p>
-    <p>Apoiamos empresas a inovar, proteger e escalar usando Inteligência Artificial, Blockchain e Cibersegurança avançada.</p>
-    <a class="btn" href="#contact">Solicitar Proposta</a>
-  </div>
+  <p>AI, Blockchain & Cybersecurity Solutions</p>
+  <p>We help organizations secure digital assets, automate decisions with AI, and build trust using blockchain technology.</p>
+  <a class="btn" href="#contact">Request a Consultation</a>
 </header>
 
 <section>
-  <h2 data-lang="en">Our Services</h2>
-  <h2 data-lang="pt">Nossos Serviços</h2>
-
+  <h2>Our Core Services</h2>
   <div class="grid">
-    <div class="card" data-lang="en">🔐 Cybersecurity Consulting & SOC Architecture</div>
-    <div class="card" data-lang="pt">🔐 Consultoria em Cibersegurança & Arquitetura SOC</div>
 
-    <div class="card" data-lang="en">🤖 Artificial Intelligence & Data Engineering</div>
-    <div class="card" data-lang="pt">🤖 Inteligência Artificial & Engenharia de Dados</div>
+    <div class="card">
+      <img src="assets/cybersecurity.jpg">
+      <div>
+        <h3>Cybersecurity</h3>
+        <p>Security architecture, SOC design, penetration testing, governance, incident response and continuous threat monitoring for modern enterprises.</p>
+      </div>
+    </div>
 
-    <div class="card" data-lang="en">⛓ Blockchain & Smart Contracts</div>
-    <div class="card" data-lang="pt">⛓ Blockchain & Smart Contracts</div>
+    <div class="card">
+      <img src="assets/ai.jpg">
+      <div>
+        <h3>Artificial Intelligence</h3>
+        <p>AI strategy, predictive analytics, NLP, computer vision, generative AI, automation and intelligent decision platforms.</p>
+      </div>
+    </div>
 
-    <div class="card" data-lang="en">☁ Cloud Security & MLOps</div>
-    <div class="card" data-lang="pt">☁ Segurança em Cloud & MLOps</div>
+    <div class="card">
+      <img src="assets/blockchain.jpg">
+      <div>
+        <h3>Blockchain</h3>
+        <p>Smart contracts, decentralized applications, digital identity, traceability systems and blockchain security auditing.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <section>
-  <h2 data-lang="en">Industry Use Cases</h2>
-  <h2 data-lang="pt">Casos de Uso por Indústria</h2>
-
+  <h2>Industry Use Cases</h2>
   <div class="grid">
-    <div class="card" data-lang="en"><strong>Finance</strong><br>Fraud detection, AI risk engines.</div>
-    <div class="card" data-lang="pt"><strong>Financeiro</strong><br>Detecção de fraude e motores de risco em IA.</div>
 
-    <div class="card" data-lang="en"><strong>Healthcare</strong><br>Secure AI platforms and data protection.</div>
-    <div class="card" data-lang="pt"><strong>Saúde</strong><br>Plataformas seguras e proteção de dados.</div>
+    <div class="card">
+      <img src="assets/finance.jpg">
+      <div>
+        <h3>Finance & FinTech</h3>
+        <p>AI-based fraud detection, secure transaction platforms, blockchain payments, regulatory compliance and cyber defense for financial operations.</p>
+      </div>
+    </div>
 
-    <div class="card" data-lang="en"><strong>E-commerce</strong><br>Threat prevention and AI automation.</div>
-    <div class="card" data-lang="pt"><strong>E-commerce</strong><br>Prevenção de ameaças e automação com IA.</div>
+    <div class="card">
+      <img src="assets/health.jpg">
+      <div>
+        <h3>Healthcare</h3>
+        <p>Protection of medical data, AI-assisted diagnostics, secure patient platforms, compliance with privacy regulations and cyber resilience.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/ecommerce.jpg">
+      <div>
+        <h3>E-commerce & Retail</h3>
+        <p>Threat prevention, AI personalization engines, secure payment flows, automation and fraud reduction at scale.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Case Studies</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="assets/cybersecurity.jpg">
+      <div>
+        <h3>AI Security Automation</h3>
+        <p>Designed an AI-driven SOC system reducing incident response time by over 60% through automated detection and prioritization.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/blockchain.jpg">
+      <div>
+        <h3>Blockchain Traceability</h3>
+        <p>Implemented smart contracts for logistics transparency, increasing audit reliability and operational trust across partners.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/ai.jpg">
+      <div>
+        <h3>Predictive AI Platform</h3>
+        <p>Built a machine learning platform for business forecasting, enabling executives to automate strategic decisions securely.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <section id="contact">
-  <h2 data-lang="en">Contact Cyber Alliance</h2>
-  <h2 data-lang="pt">Contato Cyber Alliance</h2>
+  <h2>Contact Cyber Alliance</h2>
+  <p>Tell us about your project and our experts will reach out.</p>
 
-  <form action="https://formsubmit.co/jessicaengenhariabr@hotmail.com" method="POST">
+  <form action="https://formsubmit.co/contato@cyberalliance.ai" method="POST">
     <input type="hidden" name="_captcha" value="false">
-    <input type="text" name="name" placeholder="Name / Nome" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="message" rows="5" placeholder="Message / Mensagem" required></textarea>
-    <button type="submit" data-lang="en">Send Message</button>
-    <button type="submit" data-lang="pt">Enviar Mensagem</button>
+    <input type="hidden" name="_subject" value="New Lead - Cyber Alliance">
+    <input type="hidden" name="_template" value="table">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
   </form>
 </section>
 
@@ -137,7 +165,9 @@ function setLang(lang){
   Cyber Alliance © 2026 • AI • Blockchain • Cybersecurity
 </footer>
 
-<a class="whatsapp" href="https://wa.me/5521991765023?text=Hello!%20I'm%20interested%20in%20emerging%20technologies%20solutions.%20Can%20we%20discuss%20it%20further%3F" target="_blank">💬 WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/13022087949" target="_blank">💬 WhatsApp</a>
 
 </body>
+</html>
+
 </html>
