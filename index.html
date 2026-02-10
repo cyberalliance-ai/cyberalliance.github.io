@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cyber Alliance | Risk Management & Advanced Technology</title>
+    <title>Cyber Alliance | Safe AI & Data Security for Growing Businesses</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         :root {
-            --primary: #1e3a8a; /* Deep, stable blue */
+            --primary: #1e3a8a; 
             --secondary: #0f172a;
             --light: #f8fafc;
             --text: #334155;
@@ -20,17 +20,17 @@
             padding: 15px 10%; background: white; border-bottom: 1px solid var(--border);
             position: sticky; top: 0; z-index: 1000;
         }
-        nav img { height: 60px; } 
+        nav img { height: 50px; } 
         .lang-btn { cursor: pointer; padding: 5px 10px; border: 1px solid var(--primary); border-radius: 4px; color: var(--primary); background: transparent; font-size: 0.85rem; font-weight: 600; }
 
         header {
-            padding: 100px 10%;
+            padding: 80px 10%;
             background: #ffffff;
             border-bottom: 1px solid var(--border);
         }
-        .tagline { color: var(--primary); font-weight: bold; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; margin-bottom: 10px; display: block; }
-        header h1 { font-size: 2.8rem; color: var(--secondary); margin: 0 0 20px 0; line-height: 1.2; max-width: 800px; }
-        header p { font-size: 1.15rem; max-width: 650px; color: #64748b; margin-bottom: 30px; }
+        .tagline { color: var(--primary); font-weight: bold; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 10px; display: block; }
+        header h1 { font-size: 2.5rem; color: var(--secondary); margin: 0 0 20px 0; line-height: 1.2; max-width: 850px; }
+        header p { font-size: 1.1rem; max-width: 700px; color: #64748b; margin-bottom: 30px; }
 
         .btn { 
             display: inline-block; background: var(--primary); color: white; 
@@ -39,36 +39,34 @@
         }
         .btn:hover { background: #172554; }
 
-        section { padding: 80px 10%; }
-        h2 { font-size: 2rem; color: var(--secondary); margin-bottom: 40px; }
+        section { padding: 60px 10%; }
+        h2 { font-size: 1.8rem; color: var(--secondary); margin-bottom: 40px; }
         
-        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
         .service-card {
             background: white; border-radius: 8px; padding: 32px;
             border: 1px solid var(--border); transition: 0.2s;
         }
         .service-card:hover { border-color: var(--primary); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-        .service-card h3 { color: var(--secondary); font-size: 1.4rem; margin-top: 0; margin-bottom: 15px; }
-        .service-card p { font-size: 0.95rem; color: #475569; margin-bottom: 20px; }
+        .service-card h3 { color: var(--secondary); font-size: 1.25rem; margin-top: 0; margin-bottom: 15px; border-left: 4px solid var(--primary); padding-left: 12px; }
+        .service-card p { font-size: 0.95rem; color: #475569; margin-bottom: 20px; font-weight: 500; }
         .service-card ul { padding-left: 18px; color: #64748b; font-size: 0.9rem; margin: 0; }
         .service-card li { margin-bottom: 10px; }
 
-        .trust-bar { background: #f1f5f9; padding: 40px 10%; display: flex; flex-wrap: wrap; gap: 40px; border-bottom: 1px solid var(--border); }
-        .trust-item { flex: 1; min-width: 200px; }
-        .trust-item strong { display: block; font-size: 1.2rem; color: var(--secondary); }
-        .trust-item span { font-size: 0.85rem; color: #64748b; text-transform: uppercase; }
+        .trust-bar { background: #f1f5f9; padding: 30px 10%; display: flex; flex-wrap: wrap; gap: 40px; border-bottom: 1px solid var(--border); }
+        .trust-item { flex: 1; min-width: 180px; }
+        .trust-item strong { display: block; font-size: 1.1rem; color: var(--secondary); }
+        .trust-item span { font-size: 0.8rem; color: #64748b; text-transform: uppercase; }
 
         footer { background: var(--secondary); color: white; padding: 60px 10%; text-align: left; }
         .whatsapp-float { 
             position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; 
             padding: 14px 24px; border-radius: 50px; text-decoration: none; font-weight: bold; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15); z-index: 2000; 
-            display: flex; align-items: center; gap: 10px; transition: 0.2s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15); z-index: 2000; display: flex; align-items: center; gap: 10px; transition: 0.2s;
         }
-        .whatsapp-float:hover { transform: translateY(-3px); }
 
         @media (max-width: 768px) {
-            header h1 { font-size: 2rem; }
+            header h1 { font-size: 1.8rem; }
             section { padding: 40px 5%; }
         }
     </style>
@@ -84,104 +82,84 @@
 </nav>
 
 <header>
-    <span class="tagline" data-en="Technical Compliance & Governance" data-pt="Conformidade Técnica e Governança">Technical Compliance & Governance</span>
-    <h1 data-en="Managing AI Risk and Digital Security through International Standards" data-pt="Gestão de Risco em IA e Segurança Digital via Normas Internacionais">Managing AI Risk and Digital Security through International Standards</h1>
-    <p data-en="Cyber Alliance provides technical consultancy in AI Governance, Cybersecurity, and Blockchain, focused on regulatory compliance and incident prevention." 
-       data-pt="A Cyber Alliance oferece consultoria técnica em Governança de IA, Cibersegurança e Blockchain, com foco em conformidade regulatória e prevenção de incidentes.">
-       Cyber Alliance provides technical consultancy in AI Governance, Cybersecurity, and Blockchain, focused on regulatory compliance and incident prevention.
+    <span class="tagline" data-en="AI & Cybersecurity for Growth" data-pt="IA e Cibersegurança para Crescimento">AI & Cybersecurity for Growth</span>
+    <h1 data-en="Scale Your Business with Private, Secure, and Compliant AI Solutions" data-pt="Escale seu Negócio com Soluções de IA Privadas, Seguras e em Conformidade">Scale Your Business with Private, Secure, and Compliant AI Solutions</h1>
+    <p data-en="Cyber Alliance helps Small and Medium Enterprises implement professional AI tools without compromising data privacy or security. We turn 'Shadow AI' into a controlled, high-performance business asset." 
+       data-pt="A Cyber Alliance ajuda Pequenas e Médias Empresas a implementar ferramentas profissionais de IA sem comprometer a privacidade ou segurança. Transformamos o uso informal de IA em um ativo de alta performance controlado.">
+       Cyber Alliance helps Small and Medium Enterprises implement professional AI tools without compromising data privacy or security.
     </p>
-    <a class="btn" href="https://wa.me/5521991765023" data-en="Inquire about Services" data-pt="Consultar Serviços">Inquire about Services</a>
+    <a class="btn" href="https://wa.me/5521991765023" data-en="Get a Technical Assessment" data-pt="Receba uma Avaliação Técnica">Get a Technical Assessment</a>
 </header>
 
 <div class="trust-bar">
     <div class="trust-item">
-        <strong data-en="ISO 42001 / 27001" data-pt="ISO 42001 / 27001">ISO 42001 / 27001</strong>
-        <span data-en="Certified Management" data-pt="Gestão Certificada">Certified Management</span>
+        <strong data-en="SME Focused" data-pt="Foco em PMEs">SME Focused</strong>
+        <span data-en="Practical Implementations" data-pt="Implementações Práticas">Practical Implementations</span>
     </div>
     <div class="trust-item">
-        <strong data-en="PhD-Led Research" data-pt="Liderança PhD">PhD-Led Research</strong>
-        <span data-en="Data Science & AI" data-pt="Ciência de Dados e IA">Data Science & AI</span>
+        <strong data-en="Certified Security" data-pt="Segurança Certificada">Certified Security</strong>
+        <span data-en="CEH Master & SOC Analyst" data-pt="CEH Master e Analista SOC">CEH Master & SOC Analyst</span>
     </div>
     <div class="trust-item">
-        <strong data-en="Judicial Expert" data-pt="Perícia Judicial">Judicial Expert</strong>
-        <span data-en="Technical Evidence" data-pt="Análise de Evidências">Technical Evidence</span>
+        <strong data-en="PhD Advisory" data-pt="Assessoria PhD">PhD Advisory</strong>
+        <span data-en="Expert Oversight" data-pt="Supervisão Especializada">Expert Oversight</span>
     </div>
 </div>
 
 <section id="services">
-    <h2 data-en="Core Business Units" data-pt="Unidades de Negócio">Core Business Units</h2>
+    <h2 data-en="Solutions for Modern Enterprises" data-pt="Soluções para Empresas Modernas">Solutions for Modern Enterprises</h2>
     <div class="service-grid">
         
         <div class="service-card">
-            <h3 data-en="AI Governance (CAIO)" data-pt="Governança de IA (CAIO)">AI Governance (CAIO)</h3>
-            <p data-en="We implement frameworks to ensure AI projects are safe, ethical, and compliant with emerging laws." data-pt="Implementamos frameworks para garantir que projetos de IA sejam seguros, éticos e conformes às leis emergentes.">We implement frameworks to ensure AI projects are safe, ethical, and compliant with emerging laws.</p>
+            <h3 data-en="Private AI Assistants" data-pt="Assistentes de IA Privados">Private AI Assistants</h3>
+            <p data-en="Build custom AI tools that use your company's data—safely." data-pt="Crie ferramentas de IA customizadas que usam os dados da sua empresa — com segurança.">Build custom AI tools that use your company's data—safely.</p>
             <ul>
-                <li data-en="ISO 42001 & NIST AI RMF Gap Analysis" data-pt="Análise de Gaps ISO 42001 e NIST AI RMF">ISO 42001 & NIST AI RMF Gap Analysis</li>
-                <li data-en="Fractional Chief AI Officer Advisory" data-pt="Assessoria de Chief AI Officer Fracionado">Fractional Chief AI Officer Advisory</li>
-                <li data-en="AI Policy & Risk Management" data-pt="Políticas de IA e Gestão de Risco">AI Policy & Risk Management</li>
+                <li data-en="Private Knowledge Bases (RAG)" data-pt="Bases de Conhecimento Privadas (RAG)">Private Knowledge Bases (RAG)</li>
+                <li data-en="Automated Document Processing" data-pt="Processamento de Documentos Automático">Automated Document Processing</li>
+                <li data-en="Safe GPT Implementations" data-pt="Implementações Seguras de GPT">Safe GPT Implementations</li>
             </ul>
         </div>
 
         <div class="service-card">
-            <h3 data-en="Cybersecurity Defense" data-pt="Defesa em Cibersegurança">Cybersecurity Defense</h3>
-            <p data-en="Security architecture and incident response based on EC-Council standards." data-pt="Arquitetura de segurança e resposta a incidentes baseada nos padrões EC-Council.">Security architecture and incident response based on EC-Council standards.</p>
+            <h3 data-en="AI Policy & Safety" data-pt="Políticas e Segurança de IA">AI Policy & Safety</h3>
+            <p data-en="Stop internal data leaks by establishing clear rules and technical blocks." data-pt="Evite vazamentos internos estabelecendo regras claras e bloqueios técnicos.">Stop internal data leaks by establishing clear rules and technical blocks.</p>
             <ul>
-                <li data-en="AI-Driven Threat Identification" data-pt="Identificação de Ameaças via IA">AI-Driven Threat Identification</li>
-                <li data-en="SOC Architecture & Modernization" data-pt="Arquitetura e Modernização de SOC">SOC Architecture & Modernization</li>
-                <li data-en="Vulnerability Assessments (CEH Master)" data-pt="Avaliação de Vulnerabilidades (CEH Master)">Vulnerability Assessments (CEH Master)</li>
+                <li data-en="Employee Usage Guidelines" data-pt="Guia de Uso para Funcionários">Employee Usage Guidelines</li>
+                <li data-en="Data Privacy Audits (LGPD/GDPR)" data-pt="Auditoria de Privacidade (LGPD/GDPR)">Data Privacy Audits (LGPD/GDPR)</li>
+                <li data-en="Risk Frameworks (ISO 42001)" data-pt="Frameworks de Risco (ISO 42001)">Risk Frameworks (ISO 42001)</li>
             </ul>
         </div>
 
         <div class="service-card">
-            <h3 data-en="Blockchain & Integrity" data-pt="Blockchain e Integridade">Blockchain & Integrity</h3>
-            <p data-en="Automating data transparency and securing digital assets for FinTech operations." data-pt="Automatizando a transparência de dados e protegendo ativos digitais para operações FinTech.">Automating data transparency and securing digital assets for FinTech operations.</p>
+            <h3 data-en="Cyber Defense for PMEs" data-pt="Defesa Cibernética para PMEs">Cyber Defense for PMEs</h3>
+            <p data-en="Enterprise-level protection scaled to your budget and team size." data-pt="Proteção de nível corporativo escalada para seu orçamento e tamanho de equipe.">Enterprise-level protection scaled to your budget and team size.</p>
             <ul>
-                <li data-en="Smart Contract Security Audits" data-pt="Auditoria de Segurança de Smart Contracts">Smart Contract Security Audits</li>
-                <li data-en="Data Traceability Systems" data-pt="Sistemas de Rastreabilidade de Dados">Data Traceability Systems</li>
-                <li data-en="Web3 Technical Advisory" data-pt="Consultoria Técnica Web3">Web3 Technical Advisory</li>
+                <li data-en="Vulnerability Assessments" data-pt="Análise de Vulnerabilidades">Vulnerability Assessments</li>
+                <li data-en="Cloud Security (AWS/Azure)" data-pt="Segurança em Nuvem (AWS/Azure)">Cloud Security (AWS/Azure)</li>
+                <li data-en="Ransomware Prevention" data-pt="Prevenção contra Ransomware">Ransomware Prevention</li>
             </ul>
         </div>
 
         <div class="service-card">
-            <h3 data-en="Judicial Tech Advisory" data-pt="Assessoria Técnica Judicial">Assessoria Técnica Judicial</h3>
-            <p data-en="Forensic analysis and technical reports for legal disputes involving digital systems." data-pt="Análise forense e laudos técnicos para disputas judiciais envolvendo sistemas digitais.">Forensic analysis and technical reports for legal disputes involving digital systems.</p>
+            <h3 data-en="Forensic Tech Audit" data-pt="Auditoria Técnica Forense">Auditoria Técnica Forense</h3>
+            <p data-en="Analyze breaches, verify data integrity, and resolve technical disputes." data-pt="Analise invasões, verifique integridade de dados e resolva disputas técnicas.">Analyze breaches, verify data integrity, and resolve technical disputes.</p>
             <ul>
-                <li data-en="Digital Forensic Investigation" data-pt="Investigação Forense Digital">Digital Forensic Investigation</li>
-                <li data-en="Technical Expert Reporting" data-pt="Elaboração de Laudos Periciais">Technical Expert Reporting</li>
-                <li data-en="AI Liability Assessments" data-pt="Avaliação de Responsabilidade em IA">AI Liability Assessments</li>
-            </ul>
-        </div>
-
-        <div class="service-card">
-            <h3 data-en="Technical Development" data-pt="Desenvolvimento Técnico">Desenvolvimento Técnico</h3>
-            <p data-en="Engineering scalable data pipelines and secure machine learning models." data-pt="Engenharia de pipelines de dados escaláveis e modelos de machine learning seguros.">Engineering scalable data pipelines and secure machine learning models.</p>
-            <ul>
-                <li data-en="Custom RAG & Private LLMs" data-pt="RAG Customizado e LLMs Privados">Custom RAG & Private LLMs</li>
-                <li data-en="AWS Cloud & Big Data Architectures" data-pt="Arquiteturas AWS e Big Data">AWS Cloud & Big Data Architectures</li>
-                <li data-en="MLOps Implementation" data-pt="Implementação de MLOps">MLOps Implementation</li>
-            </ul>
-        </div>
-
-        <div class="service-card">
-            <h3 data-en="Technical Training" data-pt="Treinamento Técnico">Treinamento Técnico</h3>
-            <p data-en="Upskilling internal teams on AI safety and security protocols." data-pt="Capacitação de equipes internas em segurança de IA e protocolos de defesa.">Upskilling internal teams on AI safety and security protocols.</p>
-            <ul>
-                <li data-en="Safe AI Adoption Workshops" data-pt="Workshops de Adoção Segura de IA">Safe AI Adoption Workshops</li>
-                <li data-en="Security Awareness for Engineers" data-pt="Conscientização em Segurança para Engenheiros">Security Awareness for Engineers</li>
+                <li data-en="Data Breach Investigation" data-pt="Investigação de Vazamentos">Data Breach Investigation</li>
+                <li data-en="Internal Fraud Detection" data-pt="Detecção de Fraude Interna">Internal Fraud Detection</li>
+                <li data-en="Recovery & Resilience Plans" data-pt="Planos de Recuperação e Resiliência">Recovery & Resilience Plans</li>
             </ul>
         </div>
 
     </div>
 </section>
 
+
+
 <footer>
-    <h2 style="color:white; margin-bottom:20px;" data-en="Contact Cyber Alliance" data-pt="Contato Cyber Alliance">Contact Cyber Alliance</h2>
-    <p data-en="Discuss your project with a specialized consultant." data-pt="Discuta seu projeto com um consultor especializado.">Discuss your project with a specialized consultant.</p>
+    <h2 style="color:white; margin-bottom:20px;" data-en="Modernize Your Business Safely" data-pt="Modernize sua Empresa com Segurança">Modernize Your Business Safely</h2>
+    <p data-en="Get a senior perspective on your AI and Security roadmap." data-pt="Tenha uma visão sênior sobre seu roteiro de IA e Segurança.">Get a senior perspective on your AI and Security roadmap.</p>
     <br>
-    <a class="btn" href="https://wa.me/5521991765023" data-en="WhatsApp Consultation" data-pt="Consulta via WhatsApp">WhatsApp Consultation</a>
-    <div style="margin-top:60px; font-size: 0.85rem; opacity: 0.6;">
-        © 2026 Cyber Alliance. Delaware •  Rio de Janeiro.
-    </div>
+    <a class="btn" href="https://wa.me/5521991765023" data-en="Contact an Expert" data-pt="Contatar Especialista">Contact an Expert</a>
 </footer>
 
 <a class="whatsapp-float" href="https://wa.me/5521991765023" target="_blank">
@@ -195,6 +173,9 @@
         });
     }
 </script>
+
+</body>
+</html>
 
 </body>
 </html>
