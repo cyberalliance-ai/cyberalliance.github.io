@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> <head>
+<html lang="pt-BR">
+<head>
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MRHHGGNF');</script>
+
     <script type="text/javascript"> 
         _linkedin_partner_id = "9588177"; 
         window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; 
@@ -20,118 +22,73 @@
     
     <meta charset="UTF-8">
     <title>Cyber Alliance | Projetos, Consultoria e Treinamento em IA</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
         :root {
-            --primary: #1e3a8a; 
-            --secondary: #0f172a;
-            --accent: #32CD32; /* Ajuste para verde limão vibrante para maior contraste source: 10 */
-            --light: #f8fafc;
-            --text: #334155;
-            --border: #e2e8f0;
+            --primary: #1e3a8a; --secondary: #0f172a; --accent: #32CD32;
+            --light: #f8fafc; --text: #334155; --border: #e2e8f0;
         }
 
-        body { margin:0; font-family: 'Inter', -apple-system, sans-serif; background: var(--light); color: var(--text); line-height: 1.6; }
-        
-        /* Menu removido conforme source: 25 para focar na conversão */
-        nav { 
-            display: flex; align-items: center; justify-content: center; 
-            padding: 20px 10%; background: white; border-bottom: 1px solid var(--border);
-        }
+        body { margin:0; font-family: 'Inter', sans-serif; background: var(--light); color: var(--text); line-height: 1.6; }
+        nav { display: flex; align-items: center; justify-content: center; padding: 20px 10%; background: white; border-bottom: 1px solid var(--border); }
+        nav img { height: 80px; width: auto; }
 
-        nav img { height: 80px; width: auto; max-width: 100%; } 
-
-        header {
-            padding: 60px 10%;
-            background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 40px;
-            align-items: center; /* Centralização visual */
-        }
-
-        /* Hierarquia visual source: 10 */
+        header { padding: 60px 10%; background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%); display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; }
         .hero-content h1 { font-size: 2.8rem; color: var(--secondary); margin: 0 0 20px 0; line-height: 1.1; font-weight: 800; }
-        .hero-content p { font-size: 1.2rem; color: #64748b; margin-bottom: 30px; }
-
-        /* Espaçamento e Bullet points source: 11, 12 */
+        
         .benefit-list { list-style: none; padding: 0; margin-bottom: 30px; }
         .benefit-list li { margin-bottom: 10px; display: flex; align-items: center; font-weight: 500; }
         .benefit-list li::before { content: '✔'; color: var(--accent); margin-right: 10px; font-weight: bold; }
 
-        .lead-form {
-            background: white; padding: 30px; border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1); border: 1px solid var(--border);
-        }
-        
-        /* Formulário acima da dobra source: 29 */
-        .lead-form input, .lead-form select {
-            width: 100%; padding: 12px; margin-bottom: 15px;
-            border: 1px solid var(--border); border-radius: 6px; box-sizing: border-box;
-        }
+        .lead-form { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border: 1px solid var(--border); }
+        .lead-form input, .lead-form select { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid var(--border); border-radius: 6px; }
 
-        /* CTA Contextual e vibrante source: 10, 31 */
-        .btn-cta { 
-            display: block; width: 100%; background: var(--accent); color: #000; /* Cor escura no botão claro para legibilidade */
-            padding: 16px; border-radius: 6px; text-decoration: none; 
-            font-weight: bold; text-align: center; border: none; cursor: pointer;
-            font-size: 1.1rem; transition: 0.2s; text-transform: uppercase;
-        }
-        .btn-cta:hover { filter: brightness(1.1); }
+        .btn-cta { display: block; width: 100%; background: var(--accent); color: #000; padding: 16px; border-radius: 6px; text-decoration: none; font-weight: bold; text-align: center; border: none; cursor: pointer; font-size: 1.1rem; text-transform: uppercase; }
 
-        /* Gatilhos de confiança source: 32, 34 */
         .trust-bar { background: white; padding: 30px 10%; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; border-bottom: 1px solid var(--border); }
         .trust-item { text-align: center; flex: 1; min-width: 150px; }
         .trust-item strong { display: block; font-size: 1.1rem; color: var(--primary); }
 
         section { padding: 80px 10%; }
-        h2 { text-align: center; font-size: 2rem; color: var(--secondary); margin-bottom: 50px; }
-        
         .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .service-card { background: white; border-radius: 12px; padding: 40px; border: 1px solid var(--border); transition: 0.3s; }
-        .service-card:hover { transform: translateY(-5px); }
+        .service-card { background: white; border-radius: 12px; padding: 40px; border: 1px solid var(--border); }
 
         footer { background: var(--secondary); color: white; padding: 40px 10%; }
-        .footer-legal { border-top: 1px solid #334155; padding-top: 20px; font-size: 0.8rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
-        .footer-legal a { color: #94a3b8; text-decoration: none; }
+        .footer-legal { border-top: 1px solid #334155; padding-top: 20px; font-size: 0.8rem; display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .footer-legal a { color: #94a3b8; text-decoration: none; cursor: pointer; }
+        .footer-legal a:hover { color: var(--accent); text-decoration: underline; }
 
-        .whatsapp-float { 
-            position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; 
-            padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; 
-            z-index: 2000; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
+        /* ESTILO DOS MODAIS */
+        .modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); overflow-y: auto; }
+        .modal-content { background-color: white; margin: 5% auto; padding: 30px; border-radius: 12px; width: 80%; max-width: 700px; color: #333; position: relative; }
+        .close-modal { position: absolute; top: 15px; right: 20px; font-size: 28px; font-weight: bold; cursor: pointer; }
 
-        @media (max-width: 968px) {
-            header { grid-template-columns: 1fr; text-align: center; padding: 40px 5%; }
-            .hero-content h1 { font-size: 2.2rem; }
-            .benefit-list li { justify-content: center; }
-            nav img { height: 60px; }
-        }
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; z-index: 2000; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+
+        @media (max-width: 968px) { header { grid-template-columns: 1fr; text-align: center; } }
     </style>
 </head>
 <body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRHHGGNF"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=9588177&fmt=gif" /> </noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRHHGGNF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<nav>
-    <img src="cyberalliance.png" alt="Cyber Alliance">
-</nav>
+<nav><img src="cyberalliance.png" alt="Cyber Alliance"></nav>
 
 <header>
     <div class="hero-content">
         <span style="color: var(--primary); font-weight: bold; text-transform: uppercase; font-size: 0.9rem;">Consultoria • Projetos • Treinamentos</span>
         <h1>Impulsione sua empresa com Projetos de IA e Cibersegurança de Alto Nível</h1>
-        <p>Da consultoria estratégica ao desenvolvimento de soluções personalizadas e treinamento de times.</p>
-        
+        <p>Da consultoria estratégica ao desenvolvimento de soluções personalizadas.</p>
         <ul class="benefit-list">
             <li>Proteção Ativa com IA Avançada</li>
-            <li>Conformidade Total (LGPD & ISO)</li>
-            <li>Redução de Custos Operacionais</li>
+            <li>Conformidade Total LGPD & ISO</li>
+            <li>Redução de Riscos Digitais</li>
         </ul>
     </div>
 
     <div class="lead-form">
-        <h3>SOLICITAR DIAGNÓSTICO GRATUITO</h3> <form id="whatsappForm">
+        <h3>SOLICITAR DIAGNÓSTICO GRATUITO</h3>
+        <form id="whatsappForm">
             <input type="text" id="name" placeholder="Nome Completo" required>
             <input type="email" id="email" placeholder="E-mail Corporativo" required>
             <select id="interest" required>
@@ -147,25 +104,17 @@
 
 <div class="trust-bar">
     <div class="trust-item"><strong>Liderança PhD</strong><span>Supervisão Técnica</span></div>
-    <div class="trust-item"><strong>Compliance</strong><span>LGPD & ISO 42001</span></div>
-    <div class="trust-item"><strong>Inovação</strong><span>Blockchain & IA Privada</span></div>
+    <div class="trust-item"><strong>Compliance LGPD</strong><span>Privacidade de Dados</span></div>
+    <div class="trust-item"><strong>Certificação ISO</strong><span>Segurança Global</span></div>
+    <div class="trust-item"><strong>Inovação</strong><span>IA Privada & Segura</span></div>
 </div>
 
 <section id="services">
     <h2>Nossa Atuação 360°</h2>
     <div class="service-grid">
-        <div class="service-card">
-            <h3>Consultoria Estratégica</h3>
-            <p>Diagnóstico completo e roadmap para implementação de IA e segurança.</p>
-        </div>
-        <div class="service-card">
-            <h3>Desenvolvimento de Projetos</h3>
-            <p>Construímos soluções sob medida: de IA privada a arquiteturas seguras.</p>
-        </div>
-        <div class="service-card">
-            <h3>Treinamento e Capacitação</h3>
-            <p>Capacitamos seu time para utilizar a IA de forma ética e segura.</p>
-        </div>
+        <div class="service-card"><h3>Consultoria</h3><p>Roadmap para implementação de IA e segurança.</p></div>
+        <div class="service-card"><h3>Desenvolvimento</h3><p>Soluções sob medida e arquiteturas seguras.</p></div>
+        <div class="service-card"><h3>Treinamento</h3><p>Capacitação para uso ético e seguro de IA.</p></div>
     </div>
 </section>
 
@@ -173,25 +122,60 @@
     <div class="footer-legal">
         <span>© 2026 Cyber Alliance. Todos os direitos reservados.</span>
         <div>
-            <a href="#">Política de Privacidade</a> | 
-            <a href="#">Termos de Uso</a>
+            <a onclick="openModal('modalPrivacidade')">Política de Privacidade</a> | 
+            <a onclick="openModal('modalTermos')" style="margin-left: 10px;">Termos de Uso</a>
         </div>
     </div>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/5521991765023" target="_blank">
-    <span>Falar via WhatsApp</span>
-</a>
+<div id="modalPrivacidade" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal('modalPrivacidade')">&times;</span>
+        <h2>Política de Privacidade</h2>
+        <p>A Cyber Alliance valoriza a sua privacidade. Esta política descreve como coletamos e usamos seus dados:</p>
+        <ul>
+            <li><strong>Coleta:</strong> Coletamos nome, e-mail e empresa através do nosso formulário.</li>
+            <li><strong>Finalidade:</strong> Os dados são usados exclusivamente para entrar em contato e oferecer o diagnóstico solicitado.</li>
+            <li><strong>Segurança:</strong> Adotamos práticas rígidas de segurança em conformidade com a <strong>LGPD</strong>.</li>
+            <li><strong>Seus Direitos:</strong> Você pode solicitar a exclusão de seus dados a qualquer momento enviando um e-mail para nossa equipe.</li>
+        </ul>
+    </div>
+</div>
+
+<div id="modalTermos" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal('modalTermos')">&times;</span>
+        <h2>Termos de Uso</h2>
+        <p>Ao utilizar este site, você concorda com os seguintes termos:</p>
+        <ul>
+            <li><strong>Uso do Site:</strong> O conteúdo deste site destina-se a fins informativos sobre serviços de IA e Cibersegurança.</li>
+            <li><strong>Propriedade Intelectual:</strong> Todo o conteúdo e logotipos são de propriedade da Cyber Alliance.</li>
+            <li><strong>Limitação de Responsabilidade:</strong> O diagnóstico gratuito é uma avaliação inicial e não substitui uma consultoria técnica completa.</li>
+        </ul>
+    </div>
+</div>
+
+<a class="whatsapp-float" href="https://wa.me/5521991765023" target="_blank">Falar via WhatsApp</a>
 
 <script>
+    // Script para o Formulário
     document.getElementById('whatsappForm').addEventListener('submit', function(e) {
         e.preventDefault();
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const interest = document.getElementById('interest').value;
-        const text = `Olá! Solicito diagnóstico. Nome: ${name} | E-mail: ${email} | Interesse: ${interest}`;
+        const text = `Olá! Solicito diagnóstico gratuito. Nome: ${name} | E-mail: ${email} | Interesse: ${interest}`;
         window.open(`https://wa.me/5521991765023?text=${encodeURIComponent(text)}`, '_blank');
     });
+
+    // Funções para os Modais
+    function openModal(id) { document.getElementById(id).style.display = "block"; }
+    function closeModal(id) { document.getElementById(id).style.display = "none"; }
+    
+    // Fechar ao clicar fora do modal
+    window.onclick = function(event) {
+        if (event.target.className === 'modal') { event.target.style.display = "none"; }
+    }
 </script>
 
 </body>
