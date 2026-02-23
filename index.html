@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <script type="text/javascript"> 
+        _linkedin_partner_id = "9588177"; 
+        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; 
+        window._linkedin_data_partner_ids.push(_linkedin_partner_id); 
+    </script>
+    <script type="text/javascript"> 
+        (function(l) { if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])}; 
+        window.lintrk.q=[]} var s = document.getElementsByTagName("script")[0]; 
+        var b = document.createElement("script"); b.type = "text/javascript";b.async = true; 
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; 
+        s.parentNode.insertBefore(b, s);})(window.lintrk); 
+    </script>
     <meta charset="UTF-8">
     <title>Cyber Alliance | Projetos, Consultoria e Treinamento em IA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Consultoria, desenvolvimento de projetos e treinamentos em IA e Cibersegurança com liderança PhD.">
     
     <style>
         :root {
@@ -20,9 +31,15 @@
         
         nav { 
             display: flex; align-items: center; justify-content: center; 
-            padding: 15px 10%; background: white; border-bottom: 1px solid var(--border);
+            padding: 20px 10%; background: white; border-bottom: 1px solid var(--border);
         }
-        nav img { height: 45px; } 
+
+        /* LOGO AJUSTADA PARA 80PX */
+        nav img { 
+            height: 80px; 
+            width: auto; 
+            max-width: 100%; 
+        } 
 
         header {
             padding: 60px 10%;
@@ -42,16 +59,12 @@
         }
 
         .lead-form {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            border: 1px solid var(--border);
+            background: white; padding: 30px; border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); border: 1px solid var(--border);
         }
-        .lead-form h3 { margin-top: 0; color: var(--secondary); font-size: 1.2rem; margin-bottom: 20px; text-align: center; }
         .lead-form input, .lead-form select {
             width: 100%; padding: 12px; margin-bottom: 15px;
-            border: 1px solid var(--border); border-radius: 6px; box-sizing: border-box; font-family: inherit;
+            border: 1px solid var(--border); border-radius: 6px; box-sizing: border-box;
         }
 
         .btn-cta { 
@@ -60,43 +73,35 @@
             font-weight: bold; text-align: center; border: none; cursor: pointer;
             font-size: 1.1rem; transition: 0.2s;
         }
-        .btn-cta:hover { background: #e66000; transform: scale(1.02); }
 
         .trust-bar { background: white; padding: 30px 10%; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; border-bottom: 1px solid var(--border); }
         .trust-item { text-align: center; flex: 1; min-width: 150px; }
         .trust-item strong { display: block; font-size: 1.1rem; color: var(--primary); }
-        .trust-item span { font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; }
 
         section { padding: 80px 10%; }
         h2 { text-align: center; font-size: 2rem; color: var(--secondary); margin-bottom: 50px; }
         
         .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .service-card {
-            background: white; border-radius: 12px; padding: 40px;
-            border: 1px solid var(--border); transition: 0.3s;
-        }
-        .service-card h3 { color: var(--secondary); margin-bottom: 15px; border-left: 4px solid var(--accent); padding-left: 15px; }
-        .service-card ul { padding-left: 20px; margin-top: 20px; color: #64748b; }
-        .service-card li { margin-bottom: 10px; font-size: 0.95rem; }
+        .service-card { background: white; border-radius: 12px; padding: 40px; border: 1px solid var(--border); }
 
         footer { background: var(--secondary); color: white; padding: 60px 10%; }
-        .footer-legal { margin-top: 30px; border-top: 1px solid #334155; padding-top: 20px; font-size: 0.8rem; opacity: 0.6; display: flex; justify-content: space-between; }
-        .footer-legal a { color: white; text-decoration: none; margin-left: 15px; }
+        .footer-legal { margin-top: 30px; border-top: 1px solid #334155; padding-top: 20px; font-size: 0.8rem; display: flex; justify-content: space-between; }
 
         .whatsapp-float { 
             position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; 
             padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2); z-index: 2000; display: flex; align-items: center; gap: 8px;
+            z-index: 2000; display: flex; align-items: center; gap: 8px;
         }
 
         @media (max-width: 968px) {
             header { grid-template-columns: 1fr; text-align: center; padding: 40px 5%; }
             .hero-content h1 { font-size: 2rem; }
-            .mobile-hide { display: none; }
+            nav img { height: 60px; }
         }
     </style>
 </head>
 <body>
+    <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=9588177&fmt=gif" /> </noscript>
 
 <nav>
     <img src="cyberalliance.png" alt="Cyber Alliance">
@@ -106,13 +111,7 @@
     <div class="hero-content">
         <span style="color: var(--accent); font-weight: bold; text-transform: uppercase; font-size: 0.9rem;">Consultoria • Projetos • Treinamentos</span>
         <h1>Impulsione sua empresa com Projetos de IA e Cibersegurança de Alto Nível</h1>
-        <p>Da consultoria estratégica ao desenvolvimento de soluções personalizadas e treinamento de times. Leve a expertise de um PhD para o dia a dia do seu negócio.</p>
-        
-        <div style="display: flex; gap: 10px; justify-content: flex-start; flex-wrap: wrap;" class="mobile-hide">
-             <div class="tag-pill">CONSULTORIA</div>
-             <div class="tag-pill">DESENVOLVIMENTO</div>
-             <div class="tag-pill">CAPACITAÇÃO</div>
-        </div>
+        <p>Da consultoria estratégica ao desenvolvimento de soluções personalizadas e treinamento de times.</p>
     </div>
 
     <div class="lead-form">
@@ -128,23 +127,13 @@
             </select>
             <button type="submit" class="btn-cta">Solicitar Diagnóstico via WhatsApp</button>
         </form>
-        <p style="font-size: 0.7rem; text-align: center; margin-top: 10px; color: #94a3b8;">Resposta imediata em horário comercial.</p>
     </div>
 </header>
 
 <div class="trust-bar">
-    <div class="trust-item">
-        <strong>Liderança PhD</strong>
-        <span>Supervisão Técnica</span>
-    </div>
-    <div class="trust-item">
-        <strong>Compliance</strong>
-        <span>LGPD & ISO 42001</span>
-    </div>
-    <div class="trust-item">
-        <strong>Inovação</strong>
-        <span>Blockchain & IA Privada</span>
-    </div>
+    <div class="trust-item"><strong>Liderança PhD</strong><span>Supervisão Técnica</span></div>
+    <div class="trust-item"><strong>Compliance</strong><span>LGPD & ISO 42001</span></div>
+    <div class="trust-item"><strong>Inovação</strong><span>Blockchain & IA Privada</span></div>
 </div>
 
 <section id="services">
@@ -152,51 +141,22 @@
     <div class="service-grid">
         <div class="service-card">
             <h3>Consultoria Estratégica</h3>
-            <p>Diagnóstico completo e roadmap para implementação de IA e segurança, garantindo conformidade com a LGPD e ROI real.</p>
-            <ul>
-                <li>Diretor de IA sob demanda (Fractional)</li>
-                <li>Auditoria de Segurança e Riscos</li>
-                <li>Estratégia de Governança de Dados</li>
-            </ul>
+            <p>Diagnóstico completo e roadmap para implementação de IA e segurança.</p>
         </div>
         <div class="service-card">
             <h3>Desenvolvimento de Projetos</h3>
-            <p>Construímos soluções sob medida: de assistentes de IA privados a arquiteturas seguras em nuvem e blockchain.</p>
-            <ul>
-                <li>IA Privada e Automação de Processos</li>
-                <li>Desenvolvimento de Provas de Conceito (PoC)</li>
-                <li>Implementação de Defesa Digital</li>
-            </ul>
+            <p>Construímos soluções sob medida: de IA privada a arquiteturas seguras.</p>
         </div>
         <div class="service-card">
             <h3>Treinamento e Capacitação</h3>
-            <p>Capacitamos seu time para utilizar a IA de forma ética e segura, elevando a cultura de cibersegurança da empresa.</p>
-            <ul>
-                <li>Workshops Práticos de IA Generativa</li>
-                <li>Treinamento de Conscientização em Segurança</li>
-                <li>Mentoria Técnica para Líderes</li>
-            </ul>
+            <p>Capacitamos seu time para utilizar a IA de forma ética e segura.</p>
         </div>
     </div>
 </section>
 
 <footer>
-    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
-        <div>
-            <h4 style="margin-bottom: 10px;">Cyber Alliance</h4>
-            <p style="max-width: 300px; font-size: 0.9rem;">Expertise técnica nível PhD para empresas em crescimento.</p>
-        </div>
-        <div style="text-align: right;">
-            <p style="font-size: 0.9rem;">contato@cyberalliance.com.br</p>
-            <p style="font-size: 0.9rem;">Delaware • Rio de Janeiro</p>
-        </div>
-    </div>
     <div class="footer-legal">
         <span>© 2026 Cyber Alliance. Todos os direitos reservados.</span>
-        <div>
-            <a href="#">Política de Privacidade</a>
-            <a href="#">Termos de Uso</a>
-        </div>
     </div>
 </footer>
 
@@ -207,25 +167,11 @@
 <script>
     document.getElementById('whatsappForm').addEventListener('submit', function(e) {
         e.preventDefault();
-        
-        // Dados do formulário
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const interest = document.getElementById('interest').value;
-        const phone = "5521991765023"; // SEU NÚMERO AQUI
-        
-        // Formatação da mensagem
-        const text = `Olá! Gostaria de um orçamento para projeto.%0A%0A` +
-                     `*Nome:* ${name}%0A` +
-                     `*E-mail:* ${email}%0A` +
-                     `*Interesse:* ${interest}%0A%0A` +
-                     `Vim através da Landing Page da Cyber Alliance.`;
-        
-        // Link do WhatsApp
-        const whatsappUrl = `https://wa.me/${phone}?text=${text}`;
-        
-        // Abrir em nova aba
-        window.open(whatsappUrl, '_blank');
+        const text = `Olá! Nome: ${name} | E-mail: ${email} | Interesse: ${interest}`;
+        window.open(`https://wa.me/5521991765023?text=${encodeURIComponent(text)}`, '_blank');
     });
 </script>
 
