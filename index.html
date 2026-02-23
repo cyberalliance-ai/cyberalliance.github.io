@@ -10,7 +10,7 @@
         :root {
             --primary: #1e3a8a; 
             --secondary: #0f172a;
-            --accent: #ff6b00; /* Laranja Vibrante para CTA (Sugestão de melhoria) */
+            --accent: #ff6b00; 
             --light: #f8fafc;
             --text: #334155;
             --border: #e2e8f0;
@@ -18,14 +18,12 @@
 
         body { margin:0; font-family: 'Inter', -apple-system, sans-serif; background: var(--light); color: var(--text); line-height: 1.6; }
         
-        /* Nav simplificada para evitar fuga de leads (CRO) */
         nav { 
             display: flex; align-items: center; justify-content: center; 
             padding: 15px 10%; background: white; border-bottom: 1px solid var(--border);
         }
         nav img { height: 45px; } 
 
-        /* Header com Padrão em F e Formulário acima da dobra */
         header {
             padding: 60px 10%;
             background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
@@ -35,7 +33,7 @@
             align-items: start;
         }
 
-        .hero-content h1 { font-size: 2.8rem; color: var(--secondary); margin: 0 0 20px 0; line-height: 1.1; }
+        .hero-content h1 { font-size: 2.8rem; color: var(--secondary); margin: 0 0 20px 0; line-height: 1.1; font-weight: 800; }
         .hero-content p { font-size: 1.2rem; color: #64748b; margin-bottom: 30px; }
 
         .tag-pill {
@@ -43,7 +41,6 @@
             font-size: 0.8rem; font-weight: 600; display: inline-block; margin-right: 5px;
         }
 
-        /* Formulário Estratégico */
         .lead-form {
             background: white;
             padding: 30px;
@@ -52,9 +49,9 @@
             border: 1px solid var(--border);
         }
         .lead-form h3 { margin-top: 0; color: var(--secondary); font-size: 1.2rem; margin-bottom: 20px; text-align: center; }
-        .lead-form input {
+        .lead-form input, .lead-form select {
             width: 100%; padding: 12px; margin-bottom: 15px;
-            border: 1px solid var(--border); border-radius: 6px; box-sizing: border-box;
+            border: 1px solid var(--border); border-radius: 6px; box-sizing: border-box; font-family: inherit;
         }
 
         .btn-cta { 
@@ -65,13 +62,11 @@
         }
         .btn-cta:hover { background: #e66000; transform: scale(1.02); }
 
-        /* Trust Bar */
         .trust-bar { background: white; padding: 30px 10%; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; border-bottom: 1px solid var(--border); }
         .trust-item { text-align: center; flex: 1; min-width: 150px; }
         .trust-item strong { display: block; font-size: 1.1rem; color: var(--primary); }
         .trust-item span { font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; }
 
-        /* Seções de Conteúdo */
         section { padding: 80px 10%; }
         h2 { text-align: center; font-size: 2rem; color: var(--secondary); margin-bottom: 50px; }
         
@@ -80,7 +75,6 @@
             background: white; border-radius: 12px; padding: 40px;
             border: 1px solid var(--border); transition: 0.3s;
         }
-        .service-card:hover { border-color: var(--primary); transform: translateY(-5px); }
         .service-card h3 { color: var(--secondary); margin-bottom: 15px; border-left: 4px solid var(--accent); padding-left: 15px; }
         .service-card ul { padding-left: 20px; margin-top: 20px; color: #64748b; }
         .service-card li { margin-bottom: 10px; font-size: 0.95rem; }
@@ -123,13 +117,18 @@
 
     <div class="lead-form">
         <h3>Solicitar Orçamento de Projeto</h3>
-        <form action="#" method="POST">
-            <input type="text" placeholder="Seu Nome" required>
-            <input type="email" placeholder="E-mail Corporativo" required>
-            <input type="text" placeholder="Área de Interesse (Ex: Treinamento, IA...)" required>
-            <button type="submit" class="btn-cta">Falar com um Especialista</button>
+        <form id="whatsappForm">
+            <input type="text" id="name" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="E-mail Corporativo" required>
+            <select id="interest" required>
+                <option value="">Área de Interesse...</option>
+                <option value="Consultoria">Consultoria Estratégica</option>
+                <option value="Desenvolvimento">Desenvolvimento de Projetos</option>
+                <option value="Treinamento">Treinamento e Capacitação</option>
+            </select>
+            <button type="submit" class="btn-cta">Solicitar Diagnóstico via WhatsApp</button>
         </form>
-        <p style="font-size: 0.7rem; text-align: center; margin-top: 10px; color: #94a3b8;">Diagnóstico inicial sem custos.</p>
+        <p style="font-size: 0.7rem; text-align: center; margin-top: 10px; color: #94a3b8;">Resposta imediata em horário comercial.</p>
     </div>
 </header>
 
@@ -151,7 +150,6 @@
 <section id="services">
     <h2>Nossa Atuação 360°</h2>
     <div class="service-grid">
-        
         <div class="service-card">
             <h3>Consultoria Estratégica</h3>
             <p>Diagnóstico completo e roadmap para implementação de IA e segurança, garantindo conformidade com a LGPD e ROI real.</p>
@@ -161,7 +159,6 @@
                 <li>Estratégia de Governança de Dados</li>
             </ul>
         </div>
-
         <div class="service-card">
             <h3>Desenvolvimento de Projetos</h3>
             <p>Construímos soluções sob medida: de assistentes de IA privados a arquiteturas seguras em nuvem e blockchain.</p>
@@ -171,7 +168,6 @@
                 <li>Implementação de Defesa Digital</li>
             </ul>
         </div>
-
         <div class="service-card">
             <h3>Treinamento e Capacitação</h3>
             <p>Capacitamos seu time para utilizar a IA de forma ética e segura, elevando a cultura de cibersegurança da empresa.</p>
@@ -195,7 +191,6 @@
             <p style="font-size: 0.9rem;">Delaware • Rio de Janeiro</p>
         </div>
     </div>
-    
     <div class="footer-legal">
         <span>© 2026 Cyber Alliance. Todos os direitos reservados.</span>
         <div>
@@ -208,6 +203,31 @@
 <a class="whatsapp-float" href="https://wa.me/5521991765023" target="_blank">
     <span>Falar via WhatsApp</span>
 </a>
+
+<script>
+    document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Dados do formulário
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const interest = document.getElementById('interest').value;
+        const phone = "5521991765023"; // SEU NÚMERO AQUI
+        
+        // Formatação da mensagem
+        const text = `Olá! Gostaria de um orçamento para projeto.%0A%0A` +
+                     `*Nome:* ${name}%0A` +
+                     `*E-mail:* ${email}%0A` +
+                     `*Interesse:* ${interest}%0A%0A` +
+                     `Vim através da Landing Page da Cyber Alliance.`;
+        
+        // Link do WhatsApp
+        const whatsappUrl = `https://wa.me/${phone}?text=${text}`;
+        
+        // Abrir em nova aba
+        window.open(whatsappUrl, '_blank');
+    });
+</script>
 
 </body>
 </html>
