@@ -6,6 +6,7 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MRHHGGNF');</script>
+
     <script type="text/javascript"> 
         _linkedin_partner_id = "9588177"; 
         window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; 
@@ -50,7 +51,6 @@
 
         .btn-cta { display: block; width: 100%; background: var(--accent); color: #000; padding: 16px; border-radius: 6px; font-weight: bold; text-align: center; border: none; cursor: pointer; font-size: 1.1rem; text-transform: uppercase; }
 
-        /* BARRA DE CONFIANÇA RESPONSIVA */
         .trust-bar { background: white; padding: 40px 10%; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; border-bottom: 1px solid var(--border); }
         .trust-item { display: flex; align-items: center; gap: 15px; justify-content: center; }
         .trust-item img { width: 40px; height: 40px; object-fit: contain; }
@@ -67,7 +67,7 @@
         .footer-legal { border-top: 1px solid #334155; padding-top: 20px; font-size: 0.8rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
         .footer-legal a { color: #94a3b8; text-decoration: none; cursor: pointer; }
 
-        /* MODAIS */
+        /* MODAIS CORRIGIDOS */
         .modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
         .modal-content { background: white; margin: 10% auto; padding: 30px; border-radius: 12px; width: 90%; max-width: 600px; position: relative; color: #333; text-align: left; }
         .close-modal { position: absolute; top: 15px; right: 20px; font-size: 25px; cursor: pointer; }
@@ -91,7 +91,7 @@
 <header>
     <div class="hero-content">
         <span style="color: var(--primary); font-weight: bold; text-transform: uppercase; font-size: 0.8rem;">Consultoria • Projetos • Treinamentos</span>
-        <h1>Impulsione sua empresa com Projetos de IA e Cibersegurança de Alto Nível</h1>
+        <h1>Proteja sua empresa contra ameaças digitais com Inteligência Artificial Avançada</h1>
         <p>Da consultoria estratégica ao desenvolvimento de soluções personalizadas.</p>
         <ul class="benefit-list">
             <li>Proteção Ativa com IA Avançada</li>
@@ -129,7 +129,7 @@
         <div class="service-card">
             <h3>Consultoria</h3>
             <p>Roadmap para implementação de IA e segurança.</p>
-            <span class="result-tag">BENEFÍCIO: Clareza e economia de recursos.</span>
+            <span class="result-tag">BENEFÍCIO: Clareza estratégica e economia.</span>
         </div>
         <div class="service-card">
             <h3>Desenvolvimento</h3>
@@ -139,7 +139,7 @@
         <div class="service-card">
             <h3>Treinamento</h3>
             <p>Capacitação para uso ético e seguro de IA.</p>
-            <span class="result-tag">BENEFÍCIO: Time preparado para inovar com segurança.</span>
+            <span class="result-tag">BENEFÍCIO: Equipe preparada para inovar com segurança.</span>
         </div>
     </div>
 </section>
@@ -154,8 +154,21 @@
     </div>
 </footer>
 
-<div id="modalPrivacidade" class="modal"><div class="modal-content"><span class="close-modal" onclick="closeModal('modalPrivacidade')">&times;</span><h2>Política de Privacidade</h2><p>Conteúdo da política conforme original.</p></div></div>
-<div id="modalTermos" class="modal"><div class="modal-content"><span class="close-modal" onclick="closeModal('modalTermos')">&times;</span><h2>Termos de Uso</h2><p>Conteúdo dos termos conforme original.</p></div></div>
+<div id="modalPrivacidade" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal('modalPrivacidade')">&times;</span>
+        <h2>Política de Privacidade</h2>
+        <p>A Cyber Alliance compromete-se com a proteção da sua privacidade. Os dados recolhidos neste formulário destinam-se exclusivamente ao contacto comercial para o diagnóstico solicitado.</p>
+    </div>
+</div>
+
+<div id="modalTermos" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal('modalTermos')">&times;</span>
+        <h2>Termos de Uso</h2>
+        <p>Ao utilizar este site, concorda com os termos de prestação de serviços informativos da Cyber Alliance. O conteúdo aqui exposto é de propriedade intelectual da empresa.</p>
+    </div>
+</div>
 
 <a class="whatsapp-float" href="https://wa.me/5521991765023" target="_blank">WhatsApp</a>
 
@@ -165,12 +178,10 @@
         const text = `Solicito diagnóstico. Nome: ${document.getElementById('name').value} | Interesse: ${document.getElementById('interest').value}`;
         window.open(`https://wa.me/5521991765023?text=${encodeURIComponent(text)}`, '_blank');
     });
+
     function openModal(id) { document.getElementById(id).style.display = "block"; }
     function closeModal(id) { document.getElementById(id).style.display = "none"; }
     window.onclick = function(event) { if (event.target.className === 'modal') { event.target.style.display = "none"; } }
 </script>
-</body>
-</html>
-
 </body>
 </html>
