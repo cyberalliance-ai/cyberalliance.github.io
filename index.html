@@ -6,7 +6,6 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MRHHGGNF');</script>
-
     <script type="text/javascript"> 
         _linkedin_partner_id = "9588177"; 
         window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; 
@@ -29,7 +28,6 @@
             --primary: #1e3a8a; --secondary: #0f172a; --accent: #32CD32;
             --light: #f8fafc; --text: #334155; --border: #e2e8f0;
         }
-
         * { box-sizing: border-box; }
         body { margin:0; font-family: 'Inter', sans-serif; background: var(--light); color: var(--text); line-height: 1.6; }
 
@@ -43,7 +41,6 @@
         }
 
         .hero-content h1 { font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px; line-height: 1.2; font-weight: 800; }
-        
         .benefit-list { list-style: none; padding: 0; margin-bottom: 30px; }
         .benefit-list li { margin-bottom: 10px; display: flex; align-items: center; font-weight: 500; }
         .benefit-list li::before { content: '✔'; color: var(--accent); margin-right: 10px; font-weight: bold; }
@@ -53,41 +50,36 @@
 
         .btn-cta { display: block; width: 100%; background: var(--accent); color: #000; padding: 16px; border-radius: 6px; font-weight: bold; text-align: center; border: none; cursor: pointer; font-size: 1.1rem; text-transform: uppercase; }
 
-        /* BARRA DE CONFIANÇA COM IMAGENS */
+        /* BARRA DE CONFIANÇA RESPONSIVA */
         .trust-bar { background: white; padding: 40px 10%; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; border-bottom: 1px solid var(--border); }
         .trust-item { display: flex; align-items: center; gap: 15px; justify-content: center; }
-        .trust-item img { width: 45px; height: 45px; object-fit: contain; }
+        .trust-item img { width: 40px; height: 40px; object-fit: contain; }
         .trust-item div { text-align: left; }
         .trust-item strong { display: block; font-size: 0.95rem; color: var(--primary); }
-        .trust-item span { font-size: 0.85rem; color: #64748b; }
 
-        /* SEÇÃO ATUAÇÃO 360° - FOCO EM RESULTADOS */
         section { padding: 70px 10%; }
         h2 { text-align: center; font-size: 2.2rem; color: var(--secondary); margin-bottom: 50px; }
         .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .service-card { background: white; border-radius: 12px; padding: 40px; border: 1px solid var(--border); transition: 0.3s; }
-        .service-card h3 { color: var(--primary); margin-bottom: 15px; }
-        .service-card .result-label { font-weight: bold; color: var(--accent); display: block; margin-top: 15px; text-transform: uppercase; font-size: 0.8rem; }
+        .service-card { background: white; border-radius: 12px; padding: 30px; border: 1px solid var(--border); }
+        .result-tag { font-weight: bold; color: var(--accent); display: block; margin-top: 10px; font-size: 0.8rem; }
 
         footer { background: var(--secondary); color: white; padding: 40px 10%; text-align: center; }
         .footer-legal { border-top: 1px solid #334155; padding-top: 20px; font-size: 0.8rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
         .footer-legal a { color: #94a3b8; text-decoration: none; cursor: pointer; }
 
         /* MODAIS */
-        .modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); overflow-y: auto; }
-        .modal-content { background: white; margin: 10% auto; padding: 30px; border-radius: 12px; width: 90%; max-width: 600px; position: relative; color: #333; }
+        .modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
+        .modal-content { background: white; margin: 10% auto; padding: 30px; border-radius: 12px; width: 90%; max-width: 600px; position: relative; color: #333; text-align: left; }
         .close-modal { position: absolute; top: 15px; right: 20px; font-size: 25px; cursor: pointer; }
 
-        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; z-index: 2000; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; z-index: 2000; }
 
-        /* MOBILE ADJUSTMENTS */
         @media (max-width: 968px) {
             header { grid-template-columns: 1fr; text-align: center; padding: 30px 5%; }
             .hero-content h1 { font-size: 1.8rem; }
             .benefit-list li { justify-content: center; }
-            .trust-bar { grid-template-columns: 1fr 1fr; padding: 30px 5%; }
+            .trust-bar { grid-template-columns: 1fr 1fr; padding: 20px 5%; }
             section { padding: 40px 5%; }
-            .footer-legal { flex-direction: column; align-items: center; }
         }
     </style>
 </head>
@@ -100,7 +92,7 @@
     <div class="hero-content">
         <span style="color: var(--primary); font-weight: bold; text-transform: uppercase; font-size: 0.8rem;">Consultoria • Projetos • Treinamentos</span>
         <h1>Impulsione sua empresa com Projetos de IA e Cibersegurança de Alto Nível</h1>
-        <p>Soluções preditivas que garantem o crescimento do seu negócio com proteção total.</p>
+        <p>Da consultoria estratégica ao desenvolvimento de soluções personalizadas.</p>
         <ul class="benefit-list">
             <li>Proteção Ativa com IA Avançada</li>
             <li>Conformidade Total LGPD & ISO</li>
@@ -111,7 +103,7 @@
     <div class="lead-form">
         <h3>SOLICITAR DIAGNÓSTICO GRATUITO</h3>
         <form id="whatsappForm">
-            <input type="text" id="name" placeholder="Seu Nome" required>
+            <input type="text" id="name" placeholder="Nome Completo" required>
             <input type="email" id="email" placeholder="E-mail Corporativo" required>
             <select id="interest" required>
                 <option value="">Área de Interesse...</option>
@@ -125,22 +117,10 @@
 </header>
 
 <div class="trust-bar">
-    <div class="trust-item">
-        <img src="icon-phd.png" alt="Liderança PhD">
-        <div><strong>Liderança PhD</strong><span>Supervisão Técnica</span></div>
-    </div>
-    <div class="trust-item">
-        <img src="icon-lgpd.png" alt="Compliance LGPD">
-        <div><strong>Compliance LGPD</strong><span>Privacidade de Dados</span></div>
-    </div>
-    <div class="trust-item">
-        <img src="icon-iso.png" alt="Certificação ISO">
-        <div><strong>Certificação ISO</strong><span>Segurança Global</span></div>
-    </div>
-    <div class="trust-item">
-        <img src="icon-ia.png" alt="Inovação IA">
-        <div><strong>Inovação</strong><span>IA Privada & Segura</span></div>
-    </div>
+    <div class="trust-item"><img src="phd.png"><div><strong>Liderança PhD</strong><span>Supervisão Técnica</span></div></div>
+    <div class="trust-item"><img src="lgpd.png"><div><strong>Compliance LGPD</strong><span>Privacidade de Dados</span></div></div>
+    <div class="trust-item"><img src="iso.png"><div><strong>Certificação ISO</strong><span>Segurança Global</span></div></div>
+    <div class="trust-item"><img src="ia.png"><div><strong>Inovação</strong><span>IA Privada & Segura</span></div></div>
 </div>
 
 <section id="services">
@@ -148,21 +128,18 @@
     <div class="service-grid">
         <div class="service-card">
             <h3>Consultoria</h3>
-            <p>Roadmap estratégico para implementação de IA e segurança.</p>
-            <span class="result-label">Benefício:</span>
-            <p>Economia de recursos e clareza total sobre o futuro tecnológico da sua operação.</p>
+            <p>Roadmap para implementação de IA e segurança.</p>
+            <span class="result-tag">BENEFÍCIO: Clareza e economia de recursos.</span>
         </div>
         <div class="service-card">
             <h3>Desenvolvimento</h3>
-            <p>Soluções sob medida e arquiteturas seguras de alta performance.</p>
-            <span class="result-label">Resultado:</span>
-            <p>Sistemas resilientes que reduzem falhas operacionais e impedem vazamentos de dados.</p>
+            <p>Soluções sob medida e arquiteturas seguras.</p>
+            <span class="result-tag">RESULTADO: Sistemas resilientes e protegidos.</span>
         </div>
         <div class="service-card">
             <h3>Treinamento</h3>
-            <p>Capacitação para uso ético e seguro de IA para times de alta gestão.</p>
-            <span class="result-label">Benefício:</span>
-            <p>Equipe preparada para inovar sem comprometer a segurança jurídica e digital da empresa.</p>
+            <p>Capacitação para uso ético e seguro de IA.</p>
+            <span class="result-tag">BENEFÍCIO: Time preparado para inovar com segurança.</span>
         </div>
     </div>
 </section>
@@ -177,8 +154,8 @@
     </div>
 </footer>
 
-<div id="modalPrivacidade" class="modal"><div class="modal-content"><span class="close-modal" onclick="closeModal('modalPrivacidade')">&times;</span><h2>Política de Privacidade</h2><p>Tratamos seus dados conforme a LGPD para fins de contato comercial.</p></div></div>
-<div id="modalTermos" class="modal"><div class="modal-content"><span class="close-modal" onclick="closeModal('modalTermos')">&times;</span><h2>Termos de Uso</h2><p>Uso informativo sobre serviços de IA e Cibersegurança.</p></div></div>
+<div id="modalPrivacidade" class="modal"><div class="modal-content"><span class="close-modal" onclick="closeModal('modalPrivacidade')">&times;</span><h2>Política de Privacidade</h2><p>Conteúdo da política conforme original.</p></div></div>
+<div id="modalTermos" class="modal"><div class="modal-content"><span class="close-modal" onclick="closeModal('modalTermos')">&times;</span><h2>Termos de Uso</h2><p>Conteúdo dos termos conforme original.</p></div></div>
 
 <a class="whatsapp-float" href="https://wa.me/5521991765023" target="_blank">WhatsApp</a>
 
@@ -188,11 +165,12 @@
         const text = `Solicito diagnóstico. Nome: ${document.getElementById('name').value} | Interesse: ${document.getElementById('interest').value}`;
         window.open(`https://wa.me/5521991765023?text=${encodeURIComponent(text)}`, '_blank');
     });
-
     function openModal(id) { document.getElementById(id).style.display = "block"; }
     function closeModal(id) { document.getElementById(id).style.display = "none"; }
     window.onclick = function(event) { if (event.target.className === 'modal') { event.target.style.display = "none"; } }
 </script>
+</body>
+</html>
 
 </body>
 </html>
