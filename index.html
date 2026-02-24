@@ -32,9 +32,9 @@
         * { box-sizing: border-box; }
         body { margin:0; font-family: 'Inter', sans-serif; background: var(--light); color: var(--text); line-height: 1.6; }
 
-        /* AJUSTE DA LOGO MAIOR */
+        /* LOGO AUMENTADA CONFORME SOLICITADO */
         nav { display: flex; justify-content: center; padding: 25px 5%; background: white; border-bottom: 1px solid var(--border); }
-        nav img { height: 110px; width: auto; max-width: 100%; transition: 0.3s; }
+        nav img { height: 140px; width: auto; max-width: 100%; transition: 0.3s; }
 
         header { 
             padding: 50px 10%; 
@@ -76,7 +76,7 @@
 
         /* MOBILE ADJUSTMENTS */
         @media (max-width: 968px) {
-            nav img { height: 80px; } /* Logo um pouco menor no mobile para não ocupar todo o topo */
+            nav img { height: 100px; } 
             header { grid-template-columns: 1fr; text-align: center; padding: 30px 5%; }
             .hero-content h1 { font-size: 1.8rem; }
             .benefit-list li { justify-content: center; }
@@ -92,13 +92,13 @@
 
 <header>
     <div class="hero-content">
-        <span style="color: var(--primary); font-weight: bold; text-transform: uppercase; font-size: 0.8rem;">Consultoria • Projetos • Treinamentos</span>
+        <span style="color: var(--primary); font-weight: bold; text-transform: uppercase; font-size: 0.8rem;">Consultoria • Projetos • Blockchain</span>
         <h1>Proteja sua empresa contra ameaças digitais com Inteligência Artificial Avançada</h1>
         <p>Da consultoria estratégica ao desenvolvimento de soluções personalizadas.</p>
         <ul class="benefit-list">
             <li>Proteção Ativa com IA Avançada</li>
             <li>Conformidade Total LGPD & ISO</li>
-            <li>Redução de Riscos Digitais</li>
+            <li>Rastreabilidade com Blockchain</li>
         </ul>
     </div>
 
@@ -111,6 +111,7 @@
                 <option value="">Área de Interesse...</option>
                 <option value="Consultoria">Consultoria Estratégica</option>
                 <option value="Desenvolvimento">Desenvolvimento de Projetos</option>
+                <option value="Blockchain">Projetos em Blockchain</option>
                 <option value="Treinamento">Treinamento e Capacitação</option>
             </select>
             <button type="submit" class="btn-cta">Falar com Especialista Agora</button>
@@ -137,6 +138,11 @@
             <h3>Desenvolvimento</h3>
             <p>Soluções sob medida e arquiteturas seguras.</p>
             <span class="result-tag">RESULTADO: Sistemas resilientes e protegidos.</span>
+        </div>
+        <div class="service-card">
+            <h3>Blockchain</h3>
+            <p>Implementação de registros imutáveis e Smart Contracts.</p>
+            <span class="result-tag">RESULTADO: Transparência e integridade de dados.</span>
         </div>
         <div class="service-card">
             <h3>Treinamento</h3>
