@@ -181,15 +181,27 @@
 <a class="whatsapp-float" href="https://wa.me/5521991765023" target="_blank">WhatsApp</a>
 
 <script>
-    document.getElementById('whatsappForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const text = `Olá! Solicito diagnóstico gratuito da Cyber Alliance. Nome: ${document.getElementById('name').value} | Interesse: ${document.getElementById('interest').value}`;
-        window.open(`https://wa.me/5521991765023?text=${encodeURIComponent(text)}`, '_blank');
-    });
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById('whatsappForm');
 
-    function openModal(id) { document.getElementById(id).style.display = "block"; }
-    function closeModal(id) { document.getElementById(id).style.display = "none"; }
-    window.onclick = function(event) { if (event.target.className === 'modal') { event.target.style.display = "none"; } }
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name')?.value || '';
+            const interest = document.getElementById('interest')?.value || '';
+
+            const text = `Olá! Solicito diagnóstico gratuito da Cyber Alliance.%0A%0A` +
+                         `Nome: ${name}%0AInteresse: ${interest}`;
+
+            const url = `https://wa.me/5521991765023?text=${text}`;
+
+            window.open(url, '_blank');
+        });
+    } else {
+        console.error("Form with ID 'whatsappForm' not found.");
+    }
+});
 </script>
 </body>
 </html>
