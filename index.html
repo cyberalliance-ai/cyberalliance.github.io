@@ -181,27 +181,46 @@
 <a class="whatsapp-float" href="https://wa.me/5521991765023" target="_blank">WhatsApp</a>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+    // 1. Improved WhatsApp Form Logic
     const form = document.getElementById('whatsappForm');
 
     if (form) {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
 
-            const name = document.getElementById('name')?.value || '';
-            const interest = document.getElementById('interest')?.value || '';
+            // Capture data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const interest = document.getElementById('interest').value;
 
+            // Encode message safely
             const text = `Olá! Solicito diagnóstico gratuito da Cyber Alliance.%0A%0A` +
-                         `Nome: ${name}%0AInteresse: ${interest}`;
+                         `*Nome:* ${encodeURIComponent(name)}%0A` +
+                         `*E-mail:* ${encodeURIComponent(email)}%0A` +
+                         `*Interesse:* ${encodeURIComponent(interest)}`;
 
             const url = `https://wa.me/5521991765023?text=${text}`;
 
+            // Trigger WhatsApp redirect
             window.open(url, '_blank');
         });
-    } else {
-        console.error("Form with ID 'whatsappForm' not found.");
     }
-});
+
+    // 2. Modal Controls
+    function openModal(id) {
+        document.getElementById(id).style.display = 'block';
+    }
+
+    function closeModal(id) {
+        document.getElementById(id).style.display = 'none';
+    }
+
+    // Close modals if user clicks outside of content box
+    window.onclick = function(event) {
+        if (event.target.className === 'modal') {
+            event.target.style.display = "none";
+        }
+    }
 </script>
 </body>
 </html>
