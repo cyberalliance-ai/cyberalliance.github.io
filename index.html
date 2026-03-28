@@ -32,7 +32,6 @@
         * { box-sizing: border-box; }
         body { margin:0; font-family: 'Inter', sans-serif; background: var(--light); color: var(--text); line-height: 1.6; }
 
-        /* LOGO AUMENTADA CONFORME SOLICITADO */
         nav { display: flex; justify-content: center; padding: 25px 5%; background: white; border-bottom: 1px solid var(--border); }
         nav img { height: 140px; width: auto; max-width: 100%; transition: 0.3s; }
 
@@ -74,7 +73,6 @@
 
         .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; z-index: 2000; }
 
-        /* MOBILE ADJUSTMENTS */
         @media (max-width: 968px) {
             nav img { height: 100px; } 
             header { grid-template-columns: 1fr; text-align: center; padding: 30px 5%; }
@@ -104,7 +102,7 @@
 
     <div class="lead-form">
         <h3>SOLICITAR DIAGNÓSTICO GRATUITO</h3>
-        <form id="whatsappForm">
+        <form id="whatsappForm" onsubmit="return false;">
             <input type="text" id="name" placeholder="Nome Completo" required>
             <input type="email" id="email" placeholder="E-mail Corporativo" required>
             <select id="interest" required>
@@ -114,7 +112,7 @@
                 <option value="Blockchain">Projetos em Blockchain</option>
                 <option value="Treinamento">Treinamento e Capacitação</option>
             </select>
-            <button type="submit" class="btn-cta">Falar com Especialista Agora</button>
+            <button type="button" id="submitBtn" class="btn-cta">Falar com Especialista Agora</button>
         </form>
     </div>
 </header>
@@ -178,35 +176,35 @@
     </div>
 </div>
 
-<a class="whatsapp-float" href="https://wa.me/5521991765023" target="_blank">WhatsApp</a>
+<a class="whatsapp-float" href="https://api.whatsapp.com/send?phone=5521991765023" target="_blank">WhatsApp</a>
 
 <script>
-    // 1. Improved WhatsApp Form Logic
-    const form = document.getElementById('whatsappForm');
+    // Robust WhatsApp Injection Script
+    document.getElementById('submitBtn').addEventListener('click', function() {
+        const nameVal = document.getElementById('name').value.trim();
+        const emailVal = document.getElementById('email').value.trim();
+        const interestVal = document.getElementById('interest').value;
 
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
+        // Validation check
+        if (!nameVal || !emailVal || !interestVal) {
+            alert("Por favor, preencha todos os campos do formulário para prosseguir.");
+            return;
+        }
 
-            // Capture data
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const interest = document.getElementById('interest').value;
+        // Construct message exactly as it should appear in WhatsApp
+        const messageBody = "Olá! Solicito diagnóstico gratuito da Cyber Alliance.\n\n" +
+                            "*Nome:* " + nameVal + "\n" +
+                            "*E-mail:* " + emailVal + "\n" +
+                            "*Interesse:* " + interestVal;
 
-            // Encode message safely
-            const text = `Olá! Solicito diagnóstico gratuito da Cyber Alliance.%0A%0A` +
-                         `*Nome:* ${encodeURIComponent(name)}%0A` +
-                         `*E-mail:* ${encodeURIComponent(email)}%0A` +
-                         `*Interesse:* ${encodeURIComponent(interest)}`;
+        // Use the official WhatsApp API endpoint for better text handling
+        const finalUrl = "https://api.whatsapp.com/send?phone=5521991765023&text=" + encodeURIComponent(messageBody);
 
-            const url = `https://wa.me/5521991765023?text=${text}`;
+        // Open in new tab
+        window.open(finalUrl, '_blank');
+    });
 
-            // Trigger WhatsApp redirect
-            window.open(url, '_blank');
-        });
-    }
-
-    // 2. Modal Controls
+    // Modal Control Functions
     function openModal(id) {
         document.getElementById(id).style.display = 'block';
     }
@@ -215,7 +213,7 @@
         document.getElementById(id).style.display = 'none';
     }
 
-    // Close modals if user clicks outside of content box
+    // Close on background click
     window.onclick = function(event) {
         if (event.target.className === 'modal') {
             event.target.style.display = "none";
