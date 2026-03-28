@@ -176,35 +176,31 @@
     </div>
 </div>
 
-<a class="whatsapp-float" href="https://api.whatsapp.com/send?phone=5521991765023" target="_blank">WhatsApp</a>
+<a class="whatsapp-float" href="https://api.whatsapp.com/send?phone=5521991765023&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20Cyber%20Alliance." target="_blank">WhatsApp</a>
 
 <script>
-    // Robust WhatsApp Injection Script
+    // 1. Logic for the main Lead Form Button
     document.getElementById('submitBtn').addEventListener('click', function() {
         const nameVal = document.getElementById('name').value.trim();
         const emailVal = document.getElementById('email').value.trim();
         const interestVal = document.getElementById('interest').value;
 
-        // Validation check
         if (!nameVal || !emailVal || !interestVal) {
-            alert("Por favor, preencha todos os campos do formulário para prosseguir.");
+            alert("Por favor, preencha todos os campos do formulário.");
             return;
         }
 
-        // Construct message exactly as it should appear in WhatsApp
         const messageBody = "Olá! Solicito diagnóstico gratuito da Cyber Alliance.\n\n" +
                             "*Nome:* " + nameVal + "\n" +
                             "*E-mail:* " + emailVal + "\n" +
                             "*Interesse:* " + interestVal;
 
-        // Use the official WhatsApp API endpoint for better text handling
         const finalUrl = "https://api.whatsapp.com/send?phone=5521991765023&text=" + encodeURIComponent(messageBody);
 
-        // Open in new tab
         window.open(finalUrl, '_blank');
     });
 
-    // Modal Control Functions
+    // 2. Modal Control Logic
     function openModal(id) {
         document.getElementById(id).style.display = 'block';
     }
@@ -213,7 +209,6 @@
         document.getElementById(id).style.display = 'none';
     }
 
-    // Close on background click
     window.onclick = function(event) {
         if (event.target.className === 'modal') {
             event.target.style.display = "none";
